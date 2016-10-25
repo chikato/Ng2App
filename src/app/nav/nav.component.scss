@@ -1,0 +1,25 @@
+@import "../../scss/common";
+
+.dock {
+  height: $dock-height;
+  background: $dock-bg;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  @extend .table-center;
+
+  .nav-link {
+    color: $light-color;
+    text-transform: uppercase;
+    margin: 0 15px;
+    @include transition(all 0.2s ease);
+
+    &:hover {
+      color: $sub-color-1;
+      @include scale(1.3);
+    }
+  }
+}
+

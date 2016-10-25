@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/variables";
+
+@import "var";
+@import "mixin";
+
+.table-center {
+  display: table;
+  width: 100%;
+
+  .cell-center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

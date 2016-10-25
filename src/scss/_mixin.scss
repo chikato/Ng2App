@@ -1,0 +1,57 @@
+@import "~bootstrap/scss/mixins";
+
+@mixin flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin align-items($value) {
+  -webkit-align-items: $value;
+  -moz-align-items: $value;
+  -ms-flex-align: $value;
+  -o-align-items: $value;
+  align-items: $value;
+}
+
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -ms-transform: $val; // IE9 only
+  -o-transform: $val;
+  transform: $val;
+}
+
+@mixin vertical-align {
+  position: absolute;
+  top: 50%;
+  @include translate(0, -50%);
+}
+
+@mixin horizontal-align {
+  position: absolute;
+  left: 50%;
+  @include translate(-50%, 0);
+}
+
+@mixin middle-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  @include translate(-50%, -50%);
+}
+
+@mixin scale($ratio...) {
+  -webkit-transform: scale($ratio);
+  -ms-transform: scale($ratio); // IE9 only
+  -o-transform: scale($ratio);
+  transform: scale($ratio);
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
