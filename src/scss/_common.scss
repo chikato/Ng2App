@@ -12,3 +12,8 @@
     vertical-align: middle;
   }
 }
+
+.page {
+  min-height: calc(100vh - #{80 + 30*2}px);
+  position: relative;
+}

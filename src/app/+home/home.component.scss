@@ -1,5 +1,7 @@
 @import "../../scss/common";
 
+$size: 150px;
+
 .panel {
   background: $pannel-bg;
   padding: 15px;
@@ -7,4 +9,56 @@
 
 .slider-des {
   padding-top: 30px;
+}
+
+.category {
+  position: absolute;
+  right: 300px;
+  top: 50%;
+  margin-top: -$size/2;
+
+  .cat:nth-of-type(1) {
+    top: -200px;
+    left: -$size;
+  }
+
+  .cat:nth-of-type(2) {
+    top: -200px;
+    left: $size;
+  }
+
+  .cat:nth-of-type(3) {
+    bottom: -200px;
+    left: -$size;
+  }
+
+  .cat:nth-of-type(4) {
+    bottom: -200px;
+    left: $size;
+  }
+}
+
+.icon-center {
+  width: 150px;
+  height: 150px;
+}
+
+.cat {
+  width: $size;
+  height: $size;
+  background: $dock-bg;
+  position: absolute;
+  @include border-radius(50%);
+  text-align: center;
+  color: $sub-color-1;
+  @include transition(all 0.2s ease);
+  text-transform: uppercase;
+  font-size: 18px;
+  @include user-select(none);
+  cursor: pointer;
+
+  &:hover {
+    background: $sub-color-2;
+    color: $light-color;
+  }
 }
