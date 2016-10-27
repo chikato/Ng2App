@@ -1,11 +1,8 @@
 <div class="page">
   <div class="page-container">
-    <div class="category">
+    <div class="category" [class.show]="isFinishedView">
       <img src="img/common/angular-icon.png" class="icon-center">
-      <div class="cat table-center"><span class="cell-center">Man</span></div>
-      <div class="cat table-center"><span class="cell-center">Woman</span></div>
-      <div class="cat table-center"><span class="cell-center">Accessories</span></div>
-      <div class="cat table-center"><span class="cell-center">Handbags</span></div>
+      <a class="cat table-center" *ngFor="let category of categories" href="{{category.path}}"><span class="cell-center">{{category.name}}</span></a>
     </div>
   </div>
 </div>

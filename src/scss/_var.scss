@@ -1,6 +1,7 @@
 $enable-shadows: true;
 
-$dock-bg: rgba(0, 0, 0, 0.6);
+$overlay-bg: rgba(0, 0, 0, 0.6);
+$dock-bg: $overlay-bg;
 $dock-height: 80px;
 
 $sub-color-1: #d64444;

@@ -10,7 +10,7 @@
   text-align: center;
   @extend .table-center;
   border-bottom: 3px solid $sub-color-1;
-  @include box-shadow(0 -6px 5px 0 rgba(0,0,0,0.24));
+  @include box-shadow(0 -6px 5px 0 rgba(0, 0, 0, 0.24));
 
   .nav-link {
     color: $light-color;
@@ -22,6 +22,14 @@
       color: $sub-color-1;
       @include scale(1.3);
     }
+
+    &.active {
+      color: $sub-color-1;
+    }
+  }
+
+  .nav-item {
+    min-width: 100px;
   }
 }
 
